@@ -1,0 +1,28 @@
+[project]
+name = "quitall-win"
+version = "0.1.0"
+description = "Auto-quit unused Windows apps after a configurable idle time."
+authors = [{ name = "Esteban" }]
+requires-python = ">=3.11"
+dependencies = [
+    "PySide6>=6.7",
+    "psutil>=5.9",
+    "pywin32>=306",
+    "tomli-w>=1.0",
+    "winotify>=1.1",
+]
+
+[project.optional-dependencies]
+dev = ["pyinstaller>=6.0"]
+
+[project.gui-scripts]
+# `gui-scripts` runs without a console window on Windows.
+quitall-win = "quitall_win.__main__:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["quitall_win*"]

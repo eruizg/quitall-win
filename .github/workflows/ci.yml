@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e .
+
+      - name: Syntax check
+        run: |
+          python -c "import ast, pathlib; [ast.parse(p.read_text()) for p in pathlib.Path('quitall_win').rglob('*.py')]"
+          python -c "import ast, pathlib; ast.parse(pathlib.Path('launcher.py').read_text())"
+
+      - name: Import smoke test
+        run: |
+          python -c "from quitall_win.config import Config; c = Config(); print(c)"
+          python -c "from quitall_win import autostart; print('autostart supported:', autostart.is_supported())"

@@ -1,0 +1,34 @@
+QuitAll-Win
+Copyright (c) 2026 Esteban
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <https://www.gnu.org/licenses/>.
+
+================================================================================
+
+⚠️  REPLACE THIS FILE WITH THE FULL GPL v3 TEXT BEFORE PUBLISHING.
+
+The full canonical text lives at  https://www.gnu.org/licenses/gpl-3.0.txt
+(roughly 700 lines, ~35 KB).
+
+The easiest way to get it correct is to use GitHub's UI when you create
+the repo:
+
+    1. Create the repo on github.com.
+    2. In the "Add a license" step, pick "GNU General Public License v3.0".
+    3. GitHub commits the full canonical text as LICENSE for you.
+
+Alternatively, from PowerShell after cloning the empty repo:
+
+    Invoke-WebRequest -Uri https://www.gnu.org/licenses/gpl-3.0.txt -OutFile LICENSE
+    git add LICENSE && git commit -m "Add full GPL-3.0 license text"

@@ -1,0 +1,33 @@
+QuitAll-Win
+===========
+
+Copyright (c) 2026 Esteban. All rights reserved.
+
+This software is distributed under the terms of the GNU General Public
+License v3.0 or later (see LICENSE).
+
+Trademark
+---------
+
+"QuitAll-Win" is a project name used by the original author. While the
+GPL grants you broad rights over the source code, it does not grant
+permission to use the project name to identify modified versions of the
+software.
+
+If you fork this project and distribute a modified version, please use
+a different name (e.g., "QuitAll-Win Community Edition", "FreeQuit",
+"YourName-QuitAll", etc.) to avoid confusion among users about the
+origin and support channels of your version.
+
+Attribution
+-----------
+
+If you redistribute this software, please retain this NOTICE file and
+the copyright headers in all source files.
+
+Original project: https://github.com/eruizg/quitall-win
+
+Inspiration: this project replicates the "Auto Quit" feature from
+QuitAll for macOS by Amico Apps (https://amicoapps.com/app/quitall/).
+QuitAll-Win is an independent reimplementation; it shares no code with
+the original and is not affiliated with or endorsed by Amico Apps.
